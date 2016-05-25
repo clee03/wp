@@ -1,0 +1,14 @@
+<div class="col-xs-12 col-sm-6">
+  <h1>About + Contact Me</h1>
+  <p>
+    How to set up stress-free SSL on an OS X development machine
+
+One of the best ways to reduce complexity (read: stress) in web development is to minimize the differences between your development and production environments. After being frustrated by attempts to unify the approach to SSL on my local machine and in production, I searched for a workflow that would make the protocol invisible to me between all environments.
+
+Most workflows make the following compromises:
+
+Use HTTPS in production but HTTP locally. This is annoying because it makes the environments inconsistent, and the protocol choices leak up into the stack. For example, your web application needs to understand the underlying protocol when using the secure flag for cookies. If you don't get this right, your HTTP development server won't be able to read the cookies it writes, or worse, your HTTPS production server could pass sensitive cookies over an insecure connection.
+
+Use production SSL certificates locally. This is annoying because SSL credentials shouldn't be passed around lightly, and ideally should only exist on blessed machines. Plus, even with a wildcard certificate, coming up with a scheme to put development hosts and production hosts under the same namespace has some weird edge cases (if the production app is served off of myproject.com, where is the development app served from?)
+  </p>
+</div>

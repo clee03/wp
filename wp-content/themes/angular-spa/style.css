@@ -1,0 +1,224 @@
+/*
+Theme Name: AngularJS WP Theme - Lynda.com
+Theme URI: http://www.roysivan.com/angular-wordpress-theme
+Description: Bringing AngularJS technology to WordPress. Theme front end is built using Twitter Bootstrap with some minor styling done by Roy Sivan. This theme is built to help build a Single Page Application using WordPress and AngularJS.
+Version: 5.0
+Tags: WordPress, AngularJS, JavaScript, RESTful, API, Angular, Client Side Application, Single Page Application
+Author: Roy Sivan
+Author URI: http://www.roysivan.com
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+/* HTML 5*/
+header, article, footer, section, nav{
+	display:block;
+	font-family: 'Catamaran', sans-serif;
+	margin: 10px;
+}
+
+h1, h2, h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 900;
+}
+.hidden {
+	display: none;
+}
+
+.detail-pic {
+	width: 100%;
+}
+
+.top > li > a {
+	display: inline;
+	padding: 2.5px 3.8px;
+	margin: 10px 15px;
+}
+
+
+.top > li {
+	display: inline;
+	float: right;
+}
+
+.top-div {
+	padding-top: 5vh;
+}
+div .post-content {
+	padding-top: 40px;
+}
+
+.post-img > img {
+	/*color: rgba(255, 0, 0, 0.5);*/
+	opacity: 0.85;
+}
+
+.post-img {
+	height: 75px;
+}
+
+.post-el {
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+#project-btn {
+	margin: 0px 0px 0px -16px;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+#paginate-div {
+	position: fixed;
+	bottom: 70px;
+	padding: inherit;
+}
+
+#top-nav a {
+	color: rgba(0, 0, 0, 0.75);
+}
+
+#top-nav a:hover,  #sidebar a:hover {
+	color: rgba(255, 0, 0, 0.5);
+}
+
+.logo a, #sidebar a{
+	text-decoration: none
+}
+
+#sidebar h1, .logo {
+	font-family: 'Yellowtail', cursive;
+	font-size: 3em;
+}
+
+#sidebar a {
+	color: rgba(0,0,0,0.75);
+	font-weight: 900;
+}
+
+body, div, p {
+	font-family: 'Catamaran', sans-serif;
+}
+
+#sidebar .row {
+	margin: 1em;
+}
+
+.clear{
+	clear:both;
+}
+
+body {
+  /*padding-top: 27px;*/
+
+}
+.text-center {
+  padding-top: 20px;
+}
+/*.col-xs-12 {
+  background-color: #fff;
+	background-color: rgba(192,192,192,0.3);
+}*/
+#sidebar {
+  height: 100vh;
+  padding-right: 0;
+  padding-top: 10vh;
+  overflow: hidden;
+	background-color: rgba(255,255,255,0.3);
+
+  /*background: url(http://wowslider.com/sliders/demo-85/data1/images/southtyrol350698.jpg) no-repeat center fixed;*/
+}
+#sidebar .nav {
+  width: 95%;
+  padding-top: 30vh;
+}
+#sidebar li {
+  border:0 #f2f2f2 solid;
+  border-bottom-width:1px;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    /*left: -41.6%;*/
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    /*position: absolute;
+    top: 0;
+    width: 41.6%; */
+		height: 100vh;
+		padding-right: 0;
+		padding-top: 20px;
+		/*overflow: hidden;*/
+  }
+  /*#sidebar {
+    padding-top:0;
+  }*/
+}
+
+.article img{
+	width: 100%;
+	/*padding-top: 75%;*/
+}
+
+.read-more-btn {
+	background-color:  rgba(255,255,255,0.3);
+}
+
+#paginate-div{
+	padding-top:10vh;
+}
+
+video {
+    position: absolute;
+    right: -75%;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+    /*width: 100%;*/
+    z-index: -100;
+    /*transform: translateX(-50%) translateY(-50%);*/
+  /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+  background-size: cover;
+  transition: 1s opacity;
+      -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+}
+/******** ALL FURTHER STYLING SHOULD BE DONE IN THE more-style.less/css FILES *******/
